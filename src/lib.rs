@@ -6,7 +6,10 @@ use substreams::Hex;
 use substreams_ethereum::pb::eth;
 
 #[substreams::handlers::map]
-fn map_block(block: eth::v2::Block) -> Result<BlockMeta, substreams::errors::Error> {
+fn map_block(block: eth::v2::Block) -> 
+    Result<BlockMeta, 
+    substreams::errors::Error> 
+{
     let header = block.header.as_ref().unwrap();
 
     Ok(BlockMeta {
