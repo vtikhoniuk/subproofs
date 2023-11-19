@@ -3,6 +3,7 @@
 
 ## zkLLVM Installation
 Documentation is accessible at:
+
 https://github.com/NilFoundation/zkLLVM#rust-toolchain
 https://github.com/NilFoundation/evm-placeholder-verification/
 
@@ -21,8 +22,10 @@ assigner -b ./zkproof/circuit/subproofs.ll -i ./zkproof/inputs/subproofs.inp -t 
 
 transpiler -m gen-test-proof -i ./zkproof/inputs/subproofs.inp -c ./zkproof/circuit.crct  -t ./zkproof/assignment.tbl -o transpiler_output
 
+
 transpiler -m gen-evm-verifier -i ./zkproof/inputs/subproofs.inp -c ./zkproof/circuit.crct  -t ./zkproof/assignment.tbl -o transpiler_output
 
 ## Verification Commands
 npx hardhat deploy
+
 npx hardhat verify-circuit-proof --test subproofs
