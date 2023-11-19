@@ -1,0 +1,40 @@
+{
+  "name": "@substreams/manifest",
+  "description": "",
+  "version": "0.6.0",
+  "license": "MIT",
+  "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/substreams-js/substreams-js.git",
+    "directory": "packages/manifest"
+  },
+  "scripts": {
+    "build": "pnpm build-esm && pnpm build-cjs && pnpm build-annotate && build-utils pack-v2 && cp system.pb dist/dist/system.pb",
+    "build-esm": "tsc -b tsconfig.build.json",
+    "build-cjs": "babel build/esm --plugins @babel/transform-export-namespace-from --plugins @babel/transform-modules-commonjs --out-dir build/cjs --source-maps",
+    "build-annotate": "babel build --plugins annotate-pure-calls --out-dir build --source-maps"
+  },
+  "dependencies": {
+    "@substreams/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "@bufbuild/buf": "^1.28.0",
+    "@bufbuild/protobuf": "^1.4.2",
+    "@effect/schema": "^0.47.6",
+    "effect": "2.0.0-next.54",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@bufbuild/buf": "^1.28.0",
+    "@bufbuild/protobuf": "^1.4.2",
+    "@effect/schema": "^0.47.6",
+    "@types/node": "^20.9.0",
+    "effect": "2.0.0-next.54",
+    "yaml": "^2.3.4"
+  }
+}

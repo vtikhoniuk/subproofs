@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","names":["_useSubstream","require","_useRehydrateMessage","_messageSerde"],"sources":["../../src/index.ts"],"sourcesContent":[null],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA,IAAAA,aAAA,gBAAAC,OAAA;AAIA,IAAAC,oBAAA,gBAAAD,OAAA;AACA,IAAAE,aAAA,gBAAAF,OAAA"}

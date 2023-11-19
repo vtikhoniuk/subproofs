@@ -10,7 +10,7 @@ stream: build
 
 .PHONY: protogen
 protogen:
-	substreams protogen ./substreams.yaml --exclude-paths="sf/substreams,google"
+	substreams protogen ./substreams.yaml --exclude-paths="google,sf/substreams/rpc,sf/substreams/sink,sf/substreams/v1"
 
 .PHONY: package
 package:

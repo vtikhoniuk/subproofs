@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","names":["useSubstream","useRehydrateMessage","serializeMessage","deserializeMessage"],"sources":["../../src/index.ts"],"sourcesContent":[null],"mappings":"AAAA,SACEA,YAAY,QAEP,0BAA0B;AACjC,SAASC,mBAAmB,QAAQ,kCAAkC;AACtE,SAGEC,gBAAgB,EAChBC,kBAAkB,QACb,0BAA0B"}

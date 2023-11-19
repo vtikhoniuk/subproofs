@@ -1,0 +1,28 @@
+{
+  "name": "@substreams/mermaid",
+  "version": "0.4.0",
+  "description": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/substreams-js/substreams-js.git"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@substreams/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "pako": "^2.1.0"
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/dts/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/dts/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/cjs/index.js"
+    }
+  }
+}

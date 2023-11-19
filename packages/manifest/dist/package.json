@@ -1,0 +1,32 @@
+{
+  "name": "@substreams/manifest",
+  "version": "0.6.0",
+  "description": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/substreams-js/substreams-js.git"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@substreams/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "@bufbuild/buf": "^1.28.0",
+    "@bufbuild/protobuf": "^1.4.2",
+    "@effect/schema": "^0.47.6",
+    "effect": "2.0.0-next.54",
+    "yaml": "^2.3.4"
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/dts/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/dts/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/cjs/index.js"
+    }
+  }
+}
